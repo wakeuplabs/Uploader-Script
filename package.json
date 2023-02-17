@@ -1,0 +1,17 @@
+{
+  "name": "uploadfilesscript",
+  "version": "1.0.0",
+  "description": "Uploads al files in files folder to IPFS using Wakeup Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WakeupLabs",
+  "license": "ISC",
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "node-fetch": "^3.3.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
+}
