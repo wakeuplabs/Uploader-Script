@@ -27,7 +27,7 @@ function uploadFilesInDirectory(dirPath) {
       if (fs.lstatSync(itemPath).isDirectory()) {
         // Recursively upload files in subdirectories
         uploadFilesInDirectory(itemPath);
-      } else {
+      } else if (path.extname(itemPath).toLowerCase() === '.png') {
         const fileStream = fs.createReadStream(itemPath);
 
         const formData = new FormData();
